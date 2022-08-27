@@ -1,0 +1,9 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+ com.cyber.core.config.EnableCoreAutoConfig,\
+ com.cyber.db.auto.EnableMybatisAutoConfiguration,\
+ com.cyber.db.auto.EnableRedisAutoConfiguration,\
+ com.cyber.jwt.config.EnableAutoJwtConfig,\
+ com.cyber.knife4j.config.Knife4jConfig,\
+ com.cyber.log.config.EnableLogAutoConfiguration,\
+ com.cyber.email.config.EnableEmailConfig,\
+ com.cyber.core.config.ThreadPoolExecutorConfig

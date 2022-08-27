@@ -1,0 +1,168 @@
+{
+  "groups": [
+    {
+      "name": "cyber.email",
+      "type": "com.cyber.email.properties.EmailProperties",
+      "sourceType": "com.cyber.email.properties.EmailProperties"
+    },
+    {
+      "name": "cyber.file",
+      "type": "com.cyber.core.properties.FileProperties",
+      "sourceType": "com.cyber.core.properties.FileProperties"
+    },
+    {
+      "name": "cyber.jwt.config",
+      "type": "com.cyber.jwt.properties.JwtProperties",
+      "sourceType": "com.cyber.jwt.properties.JwtProperties"
+    },
+    {
+      "name": "cyber.secure",
+      "type": "com.cyber.core.properties.SecureProperties",
+      "sourceType": "com.cyber.core.properties.SecureProperties"
+    },
+    {
+      "name": "cyber.swagger",
+      "type": "com.cyber.knife4j.properties.SwaggerConfigProperties",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerConfigProperties"
+    },
+    {
+      "name": "cyber.swagger.base",
+      "type": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cyber.email.auth",
+      "type": "java.lang.Boolean",
+      "description": "服务器是否要身份认证",
+      "sourceType": "com.cyber.email.properties.EmailProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "cyber.email.host",
+      "type": "java.lang.String",
+      "description": "协议",
+      "sourceType": "com.cyber.email.properties.EmailProperties"
+    },
+    {
+      "name": "cyber.email.password",
+      "type": "java.lang.String",
+      "description": "密码",
+      "sourceType": "com.cyber.email.properties.EmailProperties"
+    },
+    {
+      "name": "cyber.email.port",
+      "type": "java.lang.String",
+      "description": "端口",
+      "sourceType": "com.cyber.email.properties.EmailProperties"
+    },
+    {
+      "name": "cyber.email.timeout",
+      "type": "java.lang.Integer",
+      "description": "超时时间",
+      "sourceType": "com.cyber.email.properties.EmailProperties",
+      "defaultValue": 25000
+    },
+    {
+      "name": "cyber.email.username",
+      "type": "java.lang.String",
+      "description": "用户名",
+      "sourceType": "com.cyber.email.properties.EmailProperties"
+    },
+    {
+      "name": "cyber.file.base-url",
+      "type": "java.lang.String",
+      "description": "访问的基础url",
+      "sourceType": "com.cyber.core.properties.FileProperties"
+    },
+    {
+      "name": "cyber.file.download-file-path",
+      "type": "java.lang.String",
+      "description": "下载的文存储到本地服务器的地址",
+      "sourceType": "com.cyber.core.properties.FileProperties"
+    },
+    {
+      "name": "cyber.file.local-file-path",
+      "type": "java.lang.String",
+      "description": "文件上传到本地服务器的地址",
+      "sourceType": "com.cyber.core.properties.FileProperties"
+    },
+    {
+      "name": "cyber.jwt.config.key",
+      "type": "java.lang.String",
+      "description": "密钥",
+      "sourceType": "com.cyber.jwt.properties.JwtProperties",
+      "defaultValue": "c24f7e0cdcda86b547557e39ccbcba4d"
+    },
+    {
+      "name": "cyber.jwt.config.ttl",
+      "type": "java.lang.Long",
+      "description": "过期时间",
+      "sourceType": "com.cyber.jwt.properties.JwtProperties",
+      "defaultValue": 3600000000
+    },
+    {
+      "name": "cyber.secure.skip",
+      "type": "java.util.List<java.lang.String>",
+      "description": "需要跳过拦截的url",
+      "sourceType": "com.cyber.core.properties.SecureProperties"
+    },
+    {
+      "name": "cyber.swagger.base.author",
+      "type": "java.lang.String",
+      "description": "作者信息",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": "cyber"
+    },
+    {
+      "name": "cyber.swagger.base.description",
+      "type": "java.lang.String",
+      "description": "描述信息",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": "cyber的博客在线API接口文档"
+    },
+    {
+      "name": "cyber.swagger.base.email",
+      "type": "java.lang.String",
+      "description": "邮箱",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": "1477006493@qq.com"
+    },
+    {
+      "name": "cyber.swagger.base.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否开启Swagger",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "cyber.swagger.base.title",
+      "type": "java.lang.String",
+      "description": "Swagger标题",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": "cyber的博客在线API接口文档"
+    },
+    {
+      "name": "cyber.swagger.base.url",
+      "type": "java.lang.String",
+      "description": "作者URL主页",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": "https:\/\/palewl.cn"
+    },
+    {
+      "name": "cyber.swagger.base.version",
+      "type": "java.lang.String",
+      "description": "版本号",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerBaseInfoProperties",
+      "defaultValue": "v1.0.1"
+    },
+    {
+      "name": "cyber.swagger.routers",
+      "type": "java.util.List<com.cyber.knife4j.properties.Router>",
+      "description": "配置Swagger路由信息",
+      "sourceType": "com.cyber.knife4j.properties.SwaggerConfigProperties"
+    }
+  ],
+  "hints": []
+}

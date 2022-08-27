@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.cyber</groupId>
+    <artifactId>cyber-core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--工程版本锁定-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.7</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <cyber.project.version>1.0-SNAPSHOT</cyber.project.version>
+        <cyber.lombok.version>1.18.24</cyber.lombok.version>
+        <cyber.knife4j.version>3.0.3</cyber.knife4j.version>
+        <cyber.mybatis.plus.version>3.5.2</cyber.mybatis.plus.version>
+        <cyber.markdown.version>0.19.0</cyber.markdown.version>
+        <cyber.fastjson.version>2.0.11</cyber.fastjson.version>
+        <cyber.commons-lang3.version>3.12.0</cyber.commons-lang3.version>
+        <cyber.useragentutils.version>1.21</cyber.useragentutils.version>
+        <cyber.jwt.version>0.9.1</cyber.jwt.version>
+        <cyber.easy-captcha.version>1.6.2</cyber.easy-captcha.version>
+        <cyber.hutool-core.version>5.8.5</cyber.hutool-core.version>
+        <cyber.easyexcel.version>3.1.1</cyber.easyexcel.version>
+        <cyber.ip2region.version>1.7.2</cyber.ip2region.version>
+    </properties>
+
+
+    <dependencies>
+        <!--阿里巴巴处理json工具-->
+        <dependency>
+            <groupId>com.alibaba.fastjson2</groupId>
+            <artifactId>fastjson2</artifactId>
+            <version>${cyber.fastjson.version}</version>
+        </dependency>
+        <!--lang3工具类-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${cyber.commons-lang3.version}</version>
+        </dependency>
+
+        <!--AOP的实现-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>annotations</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
+
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${cyber.lombok.version}</version>
+        </dependency>
+
+        <!-- IP所属 -->
+        <dependency>
+            <groupId>org.lionsoul</groupId>
+            <artifactId>ip2region</artifactId>
+            <version>${cyber.ip2region.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>${cyber.easyexcel.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-core</artifactId>
+            <version>${cyber.hutool-core.version}</version>
+        </dependency>
+
+        <!-- token -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${cyber.jwt.version}</version>
+        </dependency>
+
+        <!--图形验证码-->
+        <dependency>
+            <groupId>com.github.whvcse</groupId>
+            <artifactId>easy-captcha</artifactId>
+            <version>${cyber.easy-captcha.version}</version>
+        </dependency>
+
+        <!-- web起步 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>eu.bitwalker</groupId>
+            <artifactId>UserAgentUtils</artifactId>
+            <version>${cyber.useragentutils.version}</version>
+        </dependency>
+
+        <!--spring配置信息插件-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!--自定义校验-->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+        <!-- 加密方式 -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-crypto</artifactId>
+        </dependency>
+        <!-- knife4j -->
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>${cyber.knife4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!--mybatis-plus-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${cyber.mybatis.plus.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
